@@ -1,5 +1,5 @@
 # NowaFlow-AI-Automation-Agency-Single-Page-Application-
-This webpage is a modern SaaS landing page for “NovaFlow,” an AI-powered automation platform designed for teams. It showcases features like workflow automation, AI agents, app integrations, and analytics, along with pricing plans, customer testimonials, FAQs, and a login/signup flow. 
+This webpage is a modern SaaS landing page for “NovaFlow,” an AI-powered automation platform designed for teams, fully responsive and accessible, built with HTML5, CSS3, and Vanilla JavaScript. It showcases features like workflow automation, AI agents, app integrations, and analytics, along with pricing plans, customer testimonials, FAQs, and a login/signup flow. 
 
 <img width="1879" height="927" alt="image" src="https://github.com/user-attachments/assets/620dd353-eef3-488a-b5da-c16db3af227f" />
 <img width="1879" height="929" alt="image" src="https://github.com/user-attachments/assets/aebaf66b-de25-452d-8d22-bd52129e6bb6" />
