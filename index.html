@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>NowaFlow: Automate the Busywork. Amplify the Flow.</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="wrapper main-wrapper">
+        <a class="main-home" href="/">
+          <h1 class="main-heading">
+            <img
+              class="logo"
+              src="assets/images/logo.svg"
+              alt="The company logo: the inverted letter 'N' with blue color on a black background"
+              height="30"
+            />
+            <span>NovaFlow</span>
+          </h1>
+        </a>
+
+        <button
+          class="mobile-btn btn"
+          aria-label="toggle mobile navigation"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <svg
+            class="hamburger-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <svg
+            class="x-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </button>
+
+        <nav
+          class="main-nav"
+          id="main-navigation"
+          aria-label="primary-navigation"
+        >
+          <div class="main-inner-wrapper">
+            <ul class="main-list">
+              <li>
+                <a class="main-link active" href="/">Home</a>
+              </li>
+              <li>
+                <a class="main-link" href="#features">Features</a>
+              </li>
+              <li>
+                <a class="main-link" href="#pricing">Pricing</a>
+              </li>
+              <li>
+                <a class="main-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="main-list">
+              <li>
+                <button
+                  class="btn btn-login"
+                  aria-expanded="false"
+                  aria-controls="login"
+                >
+                  Login
+                </button>
+              </li>
+              <li>
+                <a class="btn btn-cta" href="#">Start Free Trial</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="notice" aria-hidden="true">
+          <svg
+            class="checkmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+            />
+          </svg>
+          <h2>You have logged in successfully.</h2>
+        </div>
+        <aside class="login" id="login">
+          <button type="button" class="close btn" aria-label="close the form">
+            <svg
+              class="close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+
+          <h1 class="login-title">Welcome back</h1>
+          <p class="login-text">
+            Sign in to continue to your NovaFlow dashboard.
+          </p>
+          <form action="#" method="post" class="login-form">
+            <fieldset class="login-field">
+              <label class="login-label" for="email">Email address</label>
+              <input
+                class="login-input"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="login-field">
+              <label class="login-label" for="password">Password</label>
+              <input
+                class="login-input"
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="current-password"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="login-field">
+              <label class="login-remember">
+                <input type="checkbox" name="remember" class="checkbox" />
+                <span>Remember me</span>
+              </label>
+
+              <a class="login-forgot" href="#">Forgot password?</a>
+            </fieldset>
+
+            <button type="submit" class="btn btn-cta btn-sign">Sign In</button>
+
+            <p class="login-account">
+              Don’t have an account?
+              <a href="#" class="login-create">Create one</a>
+            </p>
+          </form>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero intersection-margin">
+        <div class="wrapper hero-wrapper">
+          <div class="hero-text-box">
+            <h2 class="hero-title">
+              <abbr title="Artificial Intelligence">AI</abbr> automation for
+              modern teams.
+            </h2>
+            <p class="hero-text">
+              Connect your apps, automate repetitive tasks, and let AI handle
+              busywork so your team can focus on meaningful work.
+            </p>
+
+            <ul class="hero-btns">
+              <li>
+                <a class="btn btn-cta" href="#">Start For Free</a>
+              </li>
+              <li>
+                <a class="btn btn-side" href="#">Learn More</a>
+              </li>
+            </ul>
+
+            <div class="hero-award">
+              <img
+                class="hero-award-icon"
+                src="assets/images/award.svg"
+                alt="A black star wrapped with two curved black branches with leafs"
+                height="52"
+              />
+              <strong class="hero-award-text"
+                >Trusted by 12,000+ teams worldwide.</strong
+              >
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="assets/images/automate-with-ai.jpg"
+              alt="The AI Agency APP: The AI model, automating your workflow"
+              height="342"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="customers intersection-margin">
+        <div class="wrapper">
+          <h2 class="section-title">We partner with the best</h2>
+          <ul class="customers-list">
+            <li class="customers-item">
+              <img
+                class="customers-logo"
+                src="assets/images/company-logos/docker.svg"
+                alt="Docker logo: a blue cargo ship that carries loads of containers, characterized as a happy-smiled whale"
+                height="100"
+              />
+            </li>
+            <li class="customers-item">
+              <img
+                class="customers-logo"
+                src="assets/images/company-logos/chanel.svg"
+                alt="Chanel logo: two 'C' letters nested, facing to the opposite directions"
+                height="100"
+              />
+            </li>
+            <li class="customers-item">
+              <img
+                class="customers-logo"
+                src="assets/images/company-logos/fulminous.svg"
+                alt="Fulminous software logo: hexagon inside of which there are two triangles"
+                height="100"
+              />
+            </li>
+            <li class="customers-item">
+              <img
+                class="customers-logo"
+                src="assets/images/company-logos/puma.svg"
+                alt="Puma logo: a jumping puma"
+                height="100"
+              />
+            </li>
+            <li class="customers-item">
+              <img
+                class="customers-logo"
+                src="assets/images/company-logos/spotify.svg"
+                alt="Spotify logo: a green circle where there are three white lines side by side"
+                height="100"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="features" class="features intersection-margin">
+        <div class="wrapper">
+          <header class="features-header">
+            <h2 class="section-title features-title">Features</h2>
+            <p class="section-subtitle">
+              Everything you need to automate work.
+            </p>
+          </header>
+
+          <ul class="features-list">
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"
+                />
+                <path
+                  d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"
+                />
+              </svg>
+              <h3 class="features-list-title">AI Workflow Builder</h3>
+              <p class="features-list-text">
+                Create powerful automations with a visual drag-and-drop
+                interface — no coding required.
+              </p>
+            </li>
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.949 6.547a3.94 3.94 0 0 0-.348-3.273 4.11 4.11 0 0 0-4.4-1.934A4.1 4.1 0 0 0 8.423.2 4.15 4.15 0 0 0 6.305.086a4.1 4.1 0 0 0-1.891.948 4.04 4.04 0 0 0-1.158 1.753 4.1 4.1 0 0 0-1.563.679A4 4 0 0 0 .554 4.72a3.99 3.99 0 0 0 .502 4.731 3.94 3.94 0 0 0 .346 3.274 4.11 4.11 0 0 0 4.402 1.933c.382.425.852.764 1.377.995.526.231 1.095.35 1.67.346 1.78.002 3.358-1.132 3.901-2.804a4.1 4.1 0 0 0 1.563-.68 4 4 0 0 0 1.14-1.253 3.99 3.99 0 0 0-.506-4.716m-6.097 8.406a3.05 3.05 0 0 1-1.945-.694l.096-.054 3.23-1.838a.53.53 0 0 0 .265-.455v-4.49l1.366.778q.02.011.025.035v3.722c-.003 1.653-1.361 2.992-3.037 2.996m-6.53-2.75a2.95 2.95 0 0 1-.36-2.01l.095.057L5.29 12.09a.53.53 0 0 0 .527 0l3.949-2.246v1.555a.05.05 0 0 1-.022.041L6.473 13.3c-1.454.826-3.311.335-4.15-1.098m-.85-6.94A3.02 3.02 0 0 1 3.07 3.949v3.785a.51.51 0 0 0 .262.451l3.93 2.237-1.366.779a.05.05 0 0 1-.048 0L2.585 9.342a2.98 2.98 0 0 1-1.113-4.094zm11.216 2.571L8.747 5.576l1.362-.776a.05.05 0 0 1 .048 0l3.265 1.86a3 3 0 0 1 1.173 1.207 2.96 2.96 0 0 1-.27 3.2 3.05 3.05 0 0 1-1.36.997V8.279a.52.52 0 0 0-.276-.445m1.36-2.015-.097-.057-3.226-1.855a.53.53 0 0 0-.53 0L6.249 6.153V4.598a.04.04 0 0 1 .019-.04L9.533 2.7a3.07 3.07 0 0 1 3.257.139c.474.325.843.778 1.066 1.303.223.526.289 1.103.191 1.664zM5.503 8.575 4.139 7.8a.05.05 0 0 1-.026-.037V4.049c0-.57.166-1.127.476-1.607s.752-.864 1.275-1.105a3.08 3.08 0 0 1 3.234.41l-.096.054-3.23 1.838a.53.53 0 0 0-.265.455zm.742-1.577 1.758-1 1.762 1v2l-1.755 1-1.762-1z"
+                />
+              </svg>
+              <h3 class="features-list-title">Smart AI Agents</h3>
+              <p class="features-list-text">
+                Train AI agents to summarize documents, answer customer
+                questions, and generate reports automatically.
+              </p>
+            </li>
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                />
+                <path
+                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                />
+              </svg>
+              <h3 class="features-list-title">App Integrations</h3>
+              <p class="features-list-text">
+                Connect tools like Slack, Notion, GitHub, Google Drive, and
+                Salesforce in minutes.
+              </p>
+            </li>
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"
+                />
+              </svg>
+              <h3 class="features-list-title">Real-Time Analytics</h3>
+              <p class="features-list-text">
+                Track workflow performance, automation success rates, and team
+                productivity from one dashboard.
+              </p>
+            </li>
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                />
+                <path
+                  d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+                />
+              </svg>
+              <h3 class="features-list-title">Enterprise Security</h3>
+              <p class="features-list-text">
+                SOC 2 compliant infrastructure with advanced encryption and
+                role-based permissions.
+              </p>
+            </li>
+            <li>
+              <svg
+                class="features-list-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
+                />
+                <path
+                  d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
+                />
+              </svg>
+              <h3 class="features-list-title">Custom Automations</h3>
+              <p class="features-list-text">
+                Build personalized workflows tailored to your company’s
+                operations and goals.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="install intersection-margin">
+        <div class="wrapper">
+          <h2 class="section-title">See how it is done step by step</h2>
+
+          <div class="install-wrapper">
+            <div class="install-video-wrapper">
+              <!-- This is designed to be replaced with a related video. -->
+              <video
+                class="install-video"
+                id="tutorial"
+                src="#"
+                poster="assets/images/poster.jpg"
+                width="500"
+              >
+                <p>
+                  Browser cannot load the tutorial video. However, you can
+                  download it via this <a href="#" download="">link</a>.
+                </p>
+              </video>
+              <span class="play-btn-wrapper">
+                <span class="play-btn-inner-wrapper">
+                  <button
+                    class="play-btn btn"
+                    aria-label="play the tutorial video"
+                    aria-controls="tutorial"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="play-btn-icon"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                      />
+                    </svg>
+                  </button>
+                </span>
+              </span>
+            </div>
+
+            <div class="install-steps">
+              <div class="line"></div>
+
+              <ol class="install-list">
+                <li>
+                  <h3 class="install-list-title">
+                    <span class="install-list-step">1</span> Connect Your Tools
+                  </h3>
+                  <p class="install-list-text">
+                    Link your favorite apps and import your existing workflows
+                    instantly.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="install-list-title">
+                    <span class="install-list-step">2</span> Build Automation
+                  </h3>
+                  <p class="install-list-text">
+                    Use templates or create custom AI workflows with an
+                    intuitive visual editor.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="install-list-title">
+                    <span class="install-list-step">3</span> Scale Productivity
+                  </h3>
+                  <p class="install-list-text">
+                    Let NovaFlow automate repetitive work while your team
+                    focuses on growth.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials intersection-margin">
+        <h2 class="section-title">Loved by fast-growing teams.</h2>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-inner-wrapper">
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">NovaFlow</span> reduced our manual
+                reporting workload by nearly 70%. It completely changed how our
+                operations team <span class="last-word">works.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Sarah Chen</span>
+                <span class="testimonial-job"
+                  >Operations Manager at BrightLabs</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">The</span> automation builder is
+                incredibly intuitive. We launched our first workflow in less
+                than an <span class="last-word">hour.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">David Kim</span>
+                <span class="testimonial-job">Founder of ScaleForge</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">NovaFlow</span> support team saves
+                dozens of hours every week using AI-powered ticket summaries and
+                <span class="last-word">automations.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Emily Rodriguez</span>
+                <span class="testimonial-job"
+                  >Customer Success Lead at OrbitHQ</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">NovaFlow</span> helped us automate lead
+                qualification and follow-ups, allowing our team to focus on
+                closing deals instead of repetitive
+                <span class="last-word">tasks.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Michael Thompson</span>
+                <span class="testimonial-job"
+                  >Head of Growth at LaunchPilot</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">Setting</span> up workflows was
+                surprisingly easy. Within days, we had automated several
+                processes that previously required multiple
+                <span class="last-word">tools.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Jessica Patel</span>
+                <span class="testimonial-job"
+                  >Marketing Director at Elevate Media</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">The</span> platform integrates
+                seamlessly with our existing stack. We saw immediate
+                improvements in team productivity and
+                <span class="last-word">visibility.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Ryan Walker</span>
+                <span class="testimonial-job"
+                  >Product Manager at CloudNest</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">NovaFlow</span> eliminated countless
+                manual handoffs between departments. Our processes are now
+                faster, more reliable, and easier to
+                <span class="last-word">manage.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Olivia Martinez</span>
+                <span class="testimonial-job"
+                  >Operations Lead at VentureSync</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">NovaFlow</span> evaluated several
+                automation platforms, but NovaFlow stood out for its simplicity
+                and powerful AI
+                <span class="last-word">capabilities.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Daniel Lee</span>
+                <span class="testimonial-job">CEO of NextBridge</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">The</span> AI-generated insights and
+                summaries have transformed how our team handles customer
+                <span class="last-word">requests.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Sophia Carter</span>
+                <span class="testimonial-job"
+                  >Customer Experience Manager at PeakCommerce</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">What</span> used to take hours now
+                happens automatically in the background. NovaFlow quickly became
+                an essential part of our
+                <span class="last-word">workflow.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Ethan Brooks</span>
+                <span class="testimonial-job"
+                  >Revenue Operations Manager at GrowthStack</span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                <span class="first-word">The</span> onboarding experience was
+                excellent. We were able to build and launch complex automations
+                without needing technical
+                <span class="last-word">support.</span>
+              </blockquote>
+
+              <figcaption class="testimonial-caption">
+                <span class="testimonial-author">Ava Wilson</span>
+                <span class="testimonial-job">Founder of SparkFlow</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing intersection-margin">
+        <div class="wrapper">
+          <header class="pricing-header">
+            <h2 class="section-title pricing-title">Pricing</h2>
+            <p class="section-subtitle">Simple pricing for every team.</p>
+          </header>
+
+          <div class="pricing-cards">
+            <article class="pricing-card">
+              <h3 class="pricing-name">Starter</h3>
+              <p class="pricing-price">$19/month</p>
+              <p class="pricing-text">
+                Everything you need to launch and automate your daily workflow.
+              </p>
+
+              <ul class="pricing-list">
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>5 workflows</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>10 integrations</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Email support</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Basic analytics</span>
+                </li>
+              </ul>
+
+              <button class="pricing-btn btn-cta btn">Subscribe Now</button>
+              <p class="pricing-info">Free Trial 7 Days</p>
+            </article>
+
+            <article class="pricing-card pricing-card--highlighted">
+              <h3 class="pricing-name">Pro</h3>
+              <p class="pricing-price">$79/month</p>
+              <p class="pricing-text">
+                Advanced tools and collaboration features designed for growing
+                teams.
+              </p>
+
+              <ul class="pricing-list">
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Unlimited workflows</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Advanced AI tools</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Team collaboration</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Priority support</span>
+                </li>
+              </ul>
+
+              <button class="pricing-btn btn btn-cta">Subscribe Now</button>
+              <p class="pricing-info">Free Trial 7 Days</p>
+            </article>
+
+            <article class="pricing-card">
+              <h3 class="pricing-name">Enterprise</h3>
+              <p class="pricing-price">Custom Pricing</p>
+              <p class="pricing-text">
+                Scalable infrastructure and premium support for mission-critical
+                operations.
+              </p>
+
+              <ul class="pricing-list">
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Dedicated infrastructure</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Advanced security</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>Custom onboarding</span>
+                </li>
+                <li class="pricing-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                  <span>SLA support</span>
+                </li>
+              </ul>
+
+              <button class="pricing-btn btn-cta btn">Subscribe Now</button>
+              <p class="pricing-info">Free Trial 7 Days</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faqs intersection-margin">
+        <div class="wrapper">
+          <h2 class="section-title">
+            Frequently Asked Questions (<abbr>FAQs</abbr>)
+          </h2>
+
+          <div class="faqs-wrapper">
+            <div class="faq active">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="true"
+                  aria-controls="faq1"
+                >
+                  <span class="faq-title-text">How long does setup take?</span>
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq1">
+                <p class="faq-text">
+                  Most teams can connect their tools and launch their first
+                  automation in under 30 minutes.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="false"
+                  aria-controls="faq2"
+                >
+                  <span class="faq-title-text"
+                    >Do I need coding experience?</span
+                  >
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq2">
+                <p class="faq-text">
+                  No. NovaFlow is designed for non-technical teams with a visual
+                  no-code interface.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="false"
+                  aria-controls="faq3"
+                >
+                  <span class="faq-title-text">Which apps can I connect?</span>
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq3">
+                <p class="faq-text">
+                  NovaFlow supports over 120 integrations including Slack,
+                  Notion, Trello, HubSpot, GitHub, and Google Workspace.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="false"
+                  aria-controls="faq4"
+                >
+                  <span class="faq-title-text">Can I cancel anytime?</span>
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq4">
+                <p class="faq-text">
+                  Yes. You can upgrade, downgrade, or cancel your subscription
+                  at any time.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="false"
+                  aria-controls="faq5"
+                >
+                  <span class="faq-title-text">Is my data secure?</span>
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq5">
+                <p class="faq-text">
+                  Yes. All data is encrypted in transit and at rest using
+                  industry-standard security practices.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <h3 class="faq-title">
+                <button
+                  class="faq-btn btn"
+                  aria-expanded="false"
+                  aria-controls="faq6"
+                >
+                  <span class="faq-title-text"
+                    >Do you offer customer support?</span
+                  >
+                  <svg
+                    class="faq-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+              </h3>
+
+              <div class="faq-body" id="faq6">
+                <p class="faq-text">
+                  Yes. Support is available via email, chat, and priority
+                  support for Pro and Enterprise users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta intersection-margin">
+        <div class="wrapper cta-wrapper">
+          <div class="cta-text-box">
+            <h2 class="cta-title">Start automating your workflows today.</h2>
+            <p class="cta-text">
+              Join thousands of teams using AI to save time, reduce busywork,
+              and scale faster.
+            </p>
+
+            <button class="btn btn-cta">Start Free Trial</button>
+          </div>
+          <div class="cta-img-box">
+            <img class="cta-img" src="assets/images/ai-chatbot.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer intersection-margin">
+      <div class="wrapper main-footer-wrapper">
+        <div>
+          <h2 class="main-footer-title">
+            <img
+              class="logo"
+              src="assets/images/logo.svg"
+              alt="The company logo: the inverted letter 'N' with blue color on a black background"
+              height="30"
+            />
+            <span>NovaFlow</span>
+          </h2>
+
+          <address class="main-footer-address">
+            143 Maple Street <abbr title="Apartment">Apt</abbr>, <br />
+            4B Springfield, <br />
+            <abbr title="Illinois">IL</abbr> 62704,
+            <abbr title="The United States of America">USA</abbr>
+          </address>
+
+          <small class="main-footer-copyright">
+            &copy; <time class="time" datetime="2026">2026</time> NovaFlow
+            <br />
+            <abbr title="Incorporated">Inc.</abbr> All rights reserved.
+          </small>
+        </div>
+
+        <nav aria-label="footer product navigation">
+          <h3 class="main-footer-subtitle">Product</h3>
+
+          <ul class="main-footer-list">
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Features</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Integrations</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Pricing</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Changelog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h3 class="main-footer-subtitle">Company</h3>
+
+          <ul class="main-footer-list">
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">About</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Careers</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Blog</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Press</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h3 class="main-footer-subtitle">Resources</h3>
+
+          <ul class="main-footer-list">
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Documentation</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Help Center</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">API Reference</a>
+            </li>
+            <li class="main-footer-item">
+              <a class="main-footer-link" href="#">Community</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h3 class="main-footer-subtitle">Follow us on:</h3>
+
+          <address>
+            <ul class="main-footer-socials">
+              <li class="main-footer-item">
+                <a class="main-footer-link" href="#" aria-label="facebook"
+                  ><svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="main-footer-item">
+                <a
+                  class="main-footer-link"
+                  href="#"
+                  aria-label="x (formerly twitter)"
+                  ><svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                    /></svg
+                ></a>
+              </li>
+              <li class="main-footer-item">
+                <a class="main-footer-link" href="#" aria-label="youtube"
+                  ><svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    /></svg
+                ></a>
+              </li>
+              <li class="main-footer-item">
+                <a class="main-footer-link" href="#" aria-label="linkedin"
+                  ><svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
